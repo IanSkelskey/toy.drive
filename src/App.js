@@ -36,8 +36,8 @@ function App() {
           </section>
 
           <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
-            <a className="text-4xl hover:text-brand-red" href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
-              Official Give Page
+            <a className="text-4xl text-brand-red hover:text-brand-blue flex" href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
+              💝 <div className="underline">Official Give Page</div>
             </a>
           </section>
 

@@ -24,7 +24,7 @@ function App() {
       </section>
 
       <section className="w-1/2 font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
-        <a className="text-4xl hover:text-brand-red" href='https://give.connecticutchildrens.org/team/539713' target="_blank">
+        <a className="text-4xl hover:text-brand-red" href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
           Official Give Page
         </a>
       </section>
@@ -32,10 +32,10 @@ function App() {
       <section className="w-1/2 font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
         <h2 className="text-4xl mb-4">Connect with us</h2>
         <div className="flex space-x-5">
-          <a href='https://discord.gg/bv2gJbGngh' target='_blank'>
+          <a href='https://discord.gg/bv2gJbGngh' target='_blank' rel="noreferrer">
             <FontAwesomeIcon className="text-brand-teal" icon={faDiscord} size="3x" />
           </a>
-          <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank">
+          <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">
             <FontAwesomeIcon className="text-brand-red" icon={faFacebook} size="3x" />
           </a>
         </div>

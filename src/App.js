@@ -5,13 +5,13 @@ import TextRibbon from "./assets/TextRibbon";
 function App() {
   return (
     <div className="min-h-screen bg-snowflake-pattern bg-repeat flex flex-col items-center p-4">
-      <img className="w-1/3" src='/ccmc-logo.png' alt="Connecticut Children's Medical Center Logo" />
+      <img className="w-1/3" src='/public/ccmc-logo.png' alt="Connecticut Children's Medical Center Logo" />
       <TextRibbon className="w-3/4" />
       <section className="w-1/2 font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
         <h2 className="text-4xl mb-4">Welcome to the Season of Giving!</h2>
         
         <p className="text-xl mb-2">
-          <img className="w-24 rounded-md text-center" src="/logo512.png" alt="Toy Drive Logo"/>
+          <img className="w-24 rounded-md text-center" src="/public/logo512.png" alt="Toy Drive Logo"/>
           Join the Bristol Plaza Starbucks Holiday Toy Drive
         </p>
         <p className="mb-2">
@@ -44,8 +44,8 @@ function App() {
       <section className="w-1/2 font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg">
         <h2 className="text-4xl mb-4">Community Partners</h2>
         <div className="flex justify-around h-24">
-          <img src='/starbucks-logo.png' alt="Starbucks Logo" />
-          <img src='/tunxis-logo.png' alt="Tunxis Logo" />
+          <img src='/public/starbucks-logo.png' alt="Starbucks Logo" />
+          <img src='/public/tunxis-logo.png' alt="Tunxis Logo" />
         </div>
       </section>
 

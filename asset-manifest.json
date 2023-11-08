@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/toy.drive/static/css/main.c46e726e.css",
+    "main.js": "/toy.drive/static/js/main.335c1ac5.js",
+    "static/js/787.6f69f76b.chunk.js": "/toy.drive/static/js/787.6f69f76b.chunk.js",
+    "static/media/background.png": "/toy.drive/static/media/background.42d148da93c53b89bbfe.png",
+    "index.html": "/toy.drive/index.html",
+    "main.c46e726e.css.map": "/toy.drive/static/css/main.c46e726e.css.map",
+    "main.335c1ac5.js.map": "/toy.drive/static/js/main.335c1ac5.js.map",
+    "787.6f69f76b.chunk.js.map": "/toy.drive/static/js/787.6f69f76b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c46e726e.css",
+    "static/js/main.335c1ac5.js"
+  ]
+}

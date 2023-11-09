@@ -21,19 +21,25 @@ function App() {
         <header className="w-full max-w-3xl flex flex-col items-center pb-2">
           <img className="w-1/2" src={ccmcBanner} alt="Connecticut Children's Medical Center Logo" />
           <img src={banner} alt="Banner" className="w-full mb-2" />
-          <div className="w-full flex p-2 text-xl space-x-5">
-            <ProgressBar progress={cashProgress} goal={cashGoal} title='Cash Goal' emoji='💰' />
-            <ProgressBar progress={toyProgress} goal={toyGoal} title='Toy Goal' emoji='🎁' />
-          </div>
         </header>
+
+        <div className="w-full flex p-2 text-xl space-x-5 bg-white bg-opacity-60 rounded-lg mb-4">
+          <ProgressBar progress={cashProgress} goal={cashGoal} title='Cash Goal' emoji='💰' />
+          <ProgressBar progress={toyProgress} goal={toyGoal} title='Toy Goal' emoji='🎁' />
+        </div>
 
         <main className="w-full">
           <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
             <h2 className="text-4xl mb-4">🎅 Welcome to the Season of Giving, 2023!</h2>
 
             <p className="text-xl mb-2">
-              <div className="w-full flex flex-col items-center my-4">
+              <div className="w-full flex flex-col items-center space-y-5 my-4">
                 <img className="w-48 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
+                <a
+                  href="https://give.connecticutchildrens.org/give/t539713/#!/donation/checkout"
+                  className="bg-brand-red hover:bg-brand-blue text-white text-xl font-bold py-2 px-4 rounded-md">
+                  ♥ Donate Now
+                </a>
               </div>
 
               Join the Connecticut Community Holiday Toy Drive

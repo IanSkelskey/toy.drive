@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/toy.drive/static/css/main.b674c731.css",
-    "main.js": "/toy.drive/static/js/main.c2163179.js",
+    "main.css": "/toy.drive/static/css/main.c01400de.css",
+    "main.js": "/toy.drive/static/js/main.83a8c4ad.js",
     "static/js/787.6f69f76b.chunk.js": "/toy.drive/static/js/787.6f69f76b.chunk.js",
     "static/media/background.png": "/toy.drive/static/media/background.42d148da93c53b89bbfe.png",
     "static/media/tunxis-logo.png": "/toy.drive/static/media/tunxis-logo.cd8f6667e1fd71de484f.png",
@@ -10,12 +10,12 @@
     "static/media/banner.svg": "/toy.drive/static/media/banner.0ea51ba003c43a06dbb5d09d292c4a2d.svg",
     "static/media/drive-logo.svg": "/toy.drive/static/media/drive-logo.671b5e4323add99ba38c4fb171da83a0.svg",
     "index.html": "/toy.drive/index.html",
-    "main.b674c731.css.map": "/toy.drive/static/css/main.b674c731.css.map",
-    "main.c2163179.js.map": "/toy.drive/static/js/main.c2163179.js.map",
+    "main.c01400de.css.map": "/toy.drive/static/css/main.c01400de.css.map",
+    "main.83a8c4ad.js.map": "/toy.drive/static/js/main.83a8c4ad.js.map",
     "787.6f69f76b.chunk.js.map": "/toy.drive/static/js/787.6f69f76b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b674c731.css",
-    "static/js/main.c2163179.js"
+    "static/css/main.c01400de.css",
+    "static/js/main.83a8c4ad.js"
   ]
 }

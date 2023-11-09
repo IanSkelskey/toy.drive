@@ -4,20 +4,20 @@ import banner from "./assets/banner.svg";
 import ccmcLogo from "./assets/ccmc-logo.png";
 import sbuxLogo from "./assets/starbucks-logo.png";
 import tunxisLogo from "./assets/tunxis-logo.png";
-import toyDriveLogo from "./assets/logo.png";
+import toyDriveLogo from "./assets/logo-transparent.png";
 
 function App() {
   return (
     <div className="min-h-screen bg-snowflake-pattern flex flex-col items-center bg-repeat bg-fixed p-2 sm:p-4">
-      <div className="max-w-5xl flex flex-col items-center">
-        <header className="w-full max-w-4xl flex flex-col items-center pb-2">
+      <div className="max-w-4xl flex flex-col items-center">
+        <header className="w-full max-w-3xl flex flex-col items-center pb-2">
           <img className="w-1/2" src={ccmcLogo} alt="Connecticut Children's Medical Center Logo" />
           <img src={banner} alt="Banner" className="w-full" />
         </header>
 
         <main className="w-full">
           <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
-            <h2 className="text-4xl mb-4">🎅 Welcome to the Season of Giving!</h2>
+            <h2 className="text-4xl mb-4">🎅 Welcome to the Season of Giving, 2023!</h2>
 
             <p className="text-xl mb-2">
               <div className="w-full flex flex-col items-center">

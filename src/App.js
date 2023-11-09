@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import banner from "./assets/banner.svg";
-import ccmcLogo from "./assets/ccmc-logo.png";
-import sbuxLogo from "./assets/starbucks-logo.png";
+import ccmcBanner from "./assets/ccmc-banner-logo.svg";
+import sbuxLogo from "./assets/starbucks-logo.svg";
 import tunxisLogo from "./assets/tunxis-logo.png";
-import toyDriveLogo from "./assets/logo-transparent.png";
+import toyDriveLogo from "./assets/drive-logo.svg";
 
 function App() {
   return (
     <div className="min-h-screen bg-snowflake-pattern flex flex-col items-center bg-repeat bg-fixed p-2 sm:p-4">
       <div className="max-w-4xl flex flex-col items-center">
         <header className="w-full max-w-3xl flex flex-col items-center pb-2">
-          <img className="w-1/2" src={ccmcLogo} alt="Connecticut Children's Medical Center Logo" />
+          <img className="w-1/2" src={ccmcBanner} alt="Connecticut Children's Medical Center Logo" />
           <img src={banner} alt="Banner" className="w-full" />
         </header>
 
@@ -20,7 +20,7 @@ function App() {
             <h2 className="text-4xl mb-4">🎅 Welcome to the Season of Giving, 2023!</h2>
 
             <p className="text-xl mb-2">
-              <div className="w-full flex flex-col items-center">
+              <div className="w-full flex flex-col items-center my-4">
                 <img className="w-48 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
               </div>
 
@@ -43,7 +43,7 @@ function App() {
 
           <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
             <h2 className="text-4xl mb-4">Wishlist</h2>
-            <ul className="list-disc px-4">
+            <ul className="list-disc px-4 mb-2">
               <li>
                 Bubbles
               </li>
@@ -102,7 +102,7 @@ function App() {
                 Mobiles
               </li>
             </ul>
-            <p>
+            <p className="mb-2">
               All items must be brand new, unwrapped, latex-free and compliant with our safety and infection control guidelines. We
               are unable to accept handmade cards, knitted/crocheted infant items, used items or toys with weapons or of a violent
               nature. If items do not fall within our guidelines or are unsafe/inappropriate for our patients, we reserve the right to
@@ -118,21 +118,36 @@ function App() {
             <h2 className="text-4xl mb-4">Connect with us</h2>
             <div className="flex space-x-5">
               <a href='https://discord.gg/bv2gJbGngh' target='_blank' rel="noreferrer">
-                <FontAwesomeIcon className="text-brand-teal" icon={faDiscord} size="3x" />
+                <div className="flex flex-col items-center">
+                  <FontAwesomeIcon className="text-brand-teal" icon={faDiscord} size="2x" />
+                  <p className="text-sm">Discord Server</p>
+                </div>
+
               </a>
               <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">
-                <FontAwesomeIcon className="text-brand-red" icon={faFacebook} size="3x" />
+                <div className="flex flex-col items-center">
+                  <FontAwesomeIcon className="text-brand-red" icon={faFacebook} size="2x" />
+                  <p className="text-sm">Facebook Group</p>
+                </div>
+
               </a>
             </div>
           </section>
 
-          <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg">
+          <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
             <h2 className="text-4xl mb-4">Community Partners</h2>
-            <div className="flex justify-around h-24">
+            <div className="flex space-x-5 h-12">
               <img src={sbuxLogo} alt="Starbucks Logo" />
               <img src={tunxisLogo} alt="Tunxis Logo" />
             </div>
           </section>
+
+          <section className="font-mostra-nuova bg-white p-4 bg-opacity-60 rounded-lg mb-4">
+            <p>
+              Website designed and developed by Ian Skelskey. All rights reserved. © 2023
+            </p>
+          </section>
+
         </main>
       </div>
     </div>

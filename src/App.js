@@ -37,8 +37,10 @@ function App() {
                 <img className="w-48 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
                 <a
                   href="https://give.connecticutchildrens.org/give/t539713/#!/donation/checkout"
+                  target="_blank"
+                  rel="noreferrer"
                   className="bg-brand-red hover:bg-brand-blue text-white text-xl font-bold py-2 px-4 rounded-md">
-                  ♥ Donate Now
+                  Donate Now
                 </a>
               </div>
 

@@ -5,14 +5,26 @@ import ccmcBanner from "./assets/ccmc-banner-logo.svg";
 import sbuxLogo from "./assets/starbucks-logo.svg";
 import tunxisLogo from "./assets/tunxis-logo.png";
 import toyDriveLogo from "./assets/drive-logo.svg";
+import ProgressBar from "./components/ProgressBar";
+
 
 function App() {
+  const cashGoal = 2000;
+  const toyGoal = 300;
+
+  const cashProgress = 50;
+  const toyProgress = 4;
+
   return (
     <div className="min-h-screen bg-snowflake-pattern flex flex-col items-center bg-repeat bg-fixed p-2 sm:p-4">
       <div className="max-w-4xl flex flex-col items-center">
         <header className="w-full max-w-3xl flex flex-col items-center pb-2">
           <img className="w-1/2" src={ccmcBanner} alt="Connecticut Children's Medical Center Logo" />
-          <img src={banner} alt="Banner" className="w-full" />
+          <img src={banner} alt="Banner" className="w-full mb-2" />
+          <div className="w-full flex p-2 text-xl space-x-5">
+            <ProgressBar progress={cashProgress} goal={cashGoal} title='Cash Goal' emoji='💰' />
+            <ProgressBar progress={toyProgress} goal={toyGoal} title='Toy Goal' emoji='🎁' />
+          </div>
         </header>
 
         <main className="w-full">

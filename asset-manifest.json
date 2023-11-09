@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/toy.drive/static/css/main.66d1bd34.css",
-    "main.js": "/toy.drive/static/js/main.0d90a340.js",
-    "static/js/787.6f69f76b.chunk.js": "/toy.drive/static/js/787.6f69f76b.chunk.js",
+    "main.css": "/toy.drive/static/css/main.f682c8e4.css",
+    "main.js": "/toy.drive/static/js/main.f43c2f5e.js",
+    "static/js/787.b03b189e.chunk.js": "/toy.drive/static/js/787.b03b189e.chunk.js",
     "static/media/starbucks-logo.png": "/toy.drive/static/media/starbucks-logo.184a59c5afda758d2709.png",
     "static/media/ccmc-logo.png": "/toy.drive/static/media/ccmc-logo.0866b94289addc5aeaf3.png",
     "static/media/background.png": "/toy.drive/static/media/background.42d148da93c53b89bbfe.png",
     "static/media/tunxis-logo.png": "/toy.drive/static/media/tunxis-logo.cd8f6667e1fd71de484f.png",
-    "static/media/logo.png": "/toy.drive/static/media/logo.0f6fa678fc0dbe3bf871.png",
+    "static/media/logo-transparent.png": "/toy.drive/static/media/logo-transparent.b9aa1bf26b46e412332e.png",
     "static/media/banner.svg": "/toy.drive/static/media/banner.0ea51ba003c43a06dbb5d09d292c4a2d.svg",
     "index.html": "/toy.drive/index.html",
-    "main.66d1bd34.css.map": "/toy.drive/static/css/main.66d1bd34.css.map",
-    "main.0d90a340.js.map": "/toy.drive/static/js/main.0d90a340.js.map",
-    "787.6f69f76b.chunk.js.map": "/toy.drive/static/js/787.6f69f76b.chunk.js.map"
+    "main.f682c8e4.css.map": "/toy.drive/static/css/main.f682c8e4.css.map",
+    "main.f43c2f5e.js.map": "/toy.drive/static/js/main.f43c2f5e.js.map",
+    "787.b03b189e.chunk.js.map": "/toy.drive/static/js/787.b03b189e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66d1bd34.css",
-    "static/js/main.0d90a340.js"
+    "static/css/main.f682c8e4.css",
+    "static/js/main.f43c2f5e.js"
   ]
 }

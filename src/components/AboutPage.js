@@ -15,7 +15,7 @@ export default function AboutPage() {
                 <h2>About Us</h2>
                 <p>🎅 Welcome to the Season of Giving, 2023!</p>
                 <div className="flex space-x-5 items-center">
-                    <img src={ian} className="rounded-full w-32" alt='Photo of Ian Skelskey. The host of the toy drive.' />
+                    <img src={ian} className="rounded-full w-32" alt='Ian Skelskey, the host of the toy drive.' />
                     <p>
                         Hello and welcome! I'm Ian Skelskey, a shift supervisor and barista trainer at Bristol Plaza Starbucks, an educational assistant at Tunxis Community College and a software engineer. I'm thrilled to introduce you to our special toy drive initiative.
                     </p>

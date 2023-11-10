@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { pageVariants } from "../utils/animation";
 
-export default function WishlistSection() {
+export default function WishlistPage() {
     return (
         <motion.div
             initial="initial"

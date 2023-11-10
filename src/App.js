@@ -1,14 +1,30 @@
+import { AnimatePresence } from "framer-motion";
 import banner from "./assets/banner.svg";
 import ccmcBanner from "./assets/ccmc-banner-logo.svg";
 import ProgressBar from "./components/ProgressBar";
-import AboutPage from "./components/AboutPage";
-import WishlistSection from "./components/WishlistSection";
-import LandingPage from "./components/LandingPage";
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router, Link, useLocation, Routes, Route } from 'react-router-dom';
+import LandingPage from "./components/LandingPage";
+import AboutPage from "./components/AboutPage";
+import WishlistPage from "./components/WishlistPage";
+
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+      <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/wishlist" element={<WishlistPage />} />
+          </Routes>
+      </AnimatePresence>
+  );
+}
 
 function App() {
+
   const cashGoal = 2000;
   const toyGoal = 300;
 
@@ -37,13 +53,7 @@ function App() {
         </nav>
 
         <main className="w-full">
-          <AnimatePresence>
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/wishlist" element={<WishlistSection />} />
-            </Routes>
-          </AnimatePresence>
+          <AnimatedRoutes />
         </main>
 
         <footer className="w-full">
@@ -59,3 +69,4 @@ function App() {
 }
 
 export default App;
+

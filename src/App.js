@@ -4,10 +4,10 @@ import banner from "./assets/banner.svg";
 import ccmcBanner from "./assets/ccmc-banner-logo.svg";
 import sbuxLogo from "./assets/starbucks-logo.svg";
 import tunxisLogo from "./assets/tunxis-logo.png";
-import toyDriveLogo from "./assets/drive-logo.svg";
 import ProgressBar from "./components/ProgressBar";
 import AboutSection from "./components/AboutSection";
 import WishlistSection from "./components/WishlistSection";
+import LandingPage from "./components/LandingSection";
 
 function App() {
   const cashGoal = 2000;
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="content">
-      <header className="w-full max-w-2xl flex flex-col items-center pb-2">
+      <header className="w-full max-w-lg flex flex-col items-center pb-2">
         <img className="w-1/2" src={ccmcBanner} alt="Connecticut Children's Medical Center Logo" />
         <img src={banner} alt="Banner" className="w-full mb-2" />
         <div className="w-full flex p-2 text-xl space-x-5 bg-white bg-opacity-60 rounded-lg mb-4">
@@ -28,31 +28,24 @@ function App() {
       </header>
 
       <main className="w-full">
-
+        <nav className="sticky top-0 w-full h-12 bg-brand-yellow">
+          <ul className="flex justify-around h-full items-center">
+            <li>
+              Home
+            </li>
+            <li>
+              Wishlist
+            </li>
+            <li>
+              Drop-off Locations
+            </li>
+            <li>
+              About Us
+            </li>
+          </ul>
+        </nav>
+        <LandingPage />
         <AboutSection />
-
-        <section className="content-section">
-          <div className="w-full flex flex-col items-center space-y-5 my-4">
-            <img className="w-48 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
-            <a
-              href="https://give.connecticutchildrens.org/give/t539713/#!/donation/checkout"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-brand-red hover:bg-brand-blue text-white text-xl font-bold py-2 px-4 rounded-md">
-              Donate Now
-            </a>
-          </div>
-          <p>
-            Join the Connecticut Community Holiday Toy Drive
-          </p>
-          <p>
-            Greetings, kind hearts and joyful givers! We're delighted to welcome you to our annual Holiday Toy Drive, a special initiative dedicated to bringing smiles and joy to the children at Connecticut Children's Medical Center. As the season of cheer unfolds, your generosity can make all the difference in the lives of those who need it most.
-          </p>
-          <p>
-            In partnership with our compassionate community, we aim to collect a sleigh-full of toys, games, and educational items to ensure that every child experiences the magic of the holiday season. From the tiniest tots to the bravest teens, your contributions will light up faces with happiness and hope.
-          </p>
-        </section>
-
         <WishlistSection />
 
         <section className="content-section">

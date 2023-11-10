@@ -43,7 +43,7 @@ function App() {
           </div>
         </header>
 
-        <nav className="sticky top-0 w-full h-12 bg-brand-yellow mb-2">
+        <nav className="sticky top-0 z-50 w-full h-12 bg-brand-yellow mb-2">
           <ul className="flex justify-around h-full items-center font-etna">
             <li><Link to="/toy.drive/">Home</Link></li>
             <li><Link to="/toy.drive/wishlist">Wishlist</Link></li>

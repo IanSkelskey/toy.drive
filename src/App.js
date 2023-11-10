@@ -1,4 +1,3 @@
-import { AnimatePresence } from "framer-motion";
 import banner from "./assets/banner.svg";
 import ccmcBanner from "./assets/ccmc-banner-logo.svg";
 import ProgressBar from "./components/ProgressBar";
@@ -13,13 +12,13 @@ function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-      <AnimatePresence>
-          <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/wishlist" element={<WishlistPage />} />
-          </Routes>
-      </AnimatePresence>
+
+    <Routes location={location} key={location.pathname}>
+      <Route path="/toy.drive/" element={<LandingPage />} />
+      <Route path="/toy.drive/about" element={<AboutPage />} />
+      <Route path="/toy.drive/wishlist" element={<WishlistPage />} />
+    </Routes>
+
   );
 }
 
@@ -46,9 +45,9 @@ function App() {
 
         <nav className="sticky top-0 w-full h-12 bg-brand-yellow mb-2">
           <ul className="flex justify-around h-full items-center font-etna">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/wishlist">Wishlist</Link></li>
-            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/toy.drive/">Home</Link></li>
+            <li><Link to="/toy.drive/wishlist">Wishlist</Link></li>
+            <li><Link to="/toy.drive/about">About Us</Link></li>
           </ul>
         </nav>
 

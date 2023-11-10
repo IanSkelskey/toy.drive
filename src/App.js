@@ -1,15 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import banner from "./assets/banner.svg";
 import ccmcBanner from "./assets/ccmc-banner-logo.svg";
-import sbuxLogo from "./assets/starbucks-logo.svg";
-import tunxisLogo from "./assets/tunxis-logo.png";
 import ProgressBar from "./components/ProgressBar";
 import AboutPage from "./components/AboutPage";
 import WishlistSection from "./components/WishlistSection";
 import LandingPage from "./components/LandingPage";
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const cashGoal = 2000;
@@ -40,12 +37,13 @@ function App() {
         </nav>
 
         <main className="w-full">
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/wishlist" element={<WishlistSection />} />
-          </Routes>
-
+          <AnimatePresence>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/wishlist" element={<WishlistSection />} />
+            </Routes>
+          </AnimatePresence>
         </main>
 
         <footer className="w-full">

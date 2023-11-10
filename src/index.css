@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 @import url('https://use.typekit.net/saj6rby.css');
+
+@layer base {
+    body {
+        @apply font-mostra-nuova min-h-screen bg-snowflake-pattern flex flex-col items-center bg-repeat bg-fixed p-2 sm:p-4
+    }
+    h1 {
+        @apply text-4xl mb-3 font-etna text-brand-red
+    }
+    h2 {
+        @apply text-3xl mb-3
+    }
+    h3 {
+        @apply text-2xl mb-3
+    }
+    p {
+        @apply mb-2
+    }
+}
+
+@layer components {
+    .content {
+        @apply max-w-4xl flex flex-col items-center
+    }
+    .content-section {
+        @apply bg-white p-4 bg-opacity-60 rounded-lg mb-4 text-center
+    }
+}

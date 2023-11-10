@@ -27,7 +27,7 @@ function App() {
   const cashGoal = 2000;
   const toyGoal = 300;
 
-  const cashProgress = 50;
+  const cashProgress = 100;
   const toyProgress = 4;
 
   return (

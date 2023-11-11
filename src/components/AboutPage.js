@@ -1,6 +1,8 @@
 import ian from "../assets/ian.png";
 import { motion } from "framer-motion";
 import { pageVariants } from "../utils/animation";
+import sbuxLogo from "../assets/starbucks-logo.svg";
+import tunxisLogo from "../assets/tunxis-logo.png";
 
 export default function AboutPage() {
     return (
@@ -36,6 +38,11 @@ export default function AboutPage() {
                 <p>
                     Thank you for visiting, and let's make this year's toy drive the most successful one yet!
                 </p>
+                <h2>Community Partners</h2>
+                <div className="flex justify-center space-x-5 h-12">
+                    <img src={sbuxLogo} alt="Starbucks Logo" />
+                    <img src={tunxisLogo} alt="Tunxis Logo" />
+                </div>
             </section>
         </motion.div>
 

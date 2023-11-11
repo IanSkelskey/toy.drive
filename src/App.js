@@ -32,7 +32,6 @@ function App() {
 
   return (
     <Router>
-
       <div className="content">
         <header className="w-full max-w-lg flex flex-col items-center pb-2">
           <img className="w-1/2" src={ccmcBanner} alt="Connecticut Children's Medical Center Logo" />
@@ -43,11 +42,11 @@ function App() {
           </div>
         </header>
 
-        <nav className="sticky top-0 z-50 w-full h-12 bg-brand-yellow mb-2">
-          <ul className="flex justify-around h-full items-center font-etna">
-            <li><Link to="/toy.drive/">Home</Link></li>
-            <li><Link to="/toy.drive/wishlist">Wishlist</Link></li>
-            <li><Link to="/toy.drive/about">About Us</Link></li>
+        <nav className="sticky top-2 z-50 w-full h-8 bg-brand-red mb-2 rounded-full bg-candy-cane-pattern">
+          <ul className="flex justify-around h-full items-center font-etna text-white">
+            <li className="bg-brand-red hover:bg-red-900 hover:bg-opacity-90 bg-opacity-90 h-full flex items-center px-4 "><Link to="/toy.drive/">Home</Link></li>
+            <li className="bg-brand-red hover:bg-red-900 hover:bg-opacity-90 bg-opacity-90 h-full flex items-center px-4"><Link to="/toy.drive/wishlist">Wishlist</Link></li>
+            <li className="bg-brand-red hover:bg-red-900 hover:bg-opacity-90 bg-opacity-90 h-full flex items-center px-4"><Link to="/toy.drive/about">About Us</Link></li>
           </ul>
         </nav>
 

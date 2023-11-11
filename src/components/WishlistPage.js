@@ -71,12 +71,14 @@ export default function WishlistPage() {
                         Mobiles
                     </li>
                 </ul>
+                <hr className="my-4" />
                 <p>
                     All items must be brand new, unwrapped, latex-free and compliant with our safety and infection control guidelines. We
                     are unable to accept handmade cards, knitted/crocheted infant items, used items or toys with weapons or of a violent
                     nature. If items do not fall within our guidelines or are unsafe/inappropriate for our patients, we reserve the right to
                     politely decline donations.
                 </p>
+                <hr className="my-4" />
                 <p>
                     *Please note: We no longer accept hats or loose blankets. Sleep sacks are the best choice for swaddling babies and
                     maintaining warmth.

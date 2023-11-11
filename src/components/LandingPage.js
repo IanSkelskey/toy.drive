@@ -1,6 +1,9 @@
 import toyDriveLogo from "../assets/drive-logo.svg";
 import { motion } from "framer-motion";
 import { pageVariants } from "../utils/animation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPage() {
     return (
@@ -47,6 +50,34 @@ export default function LandingPage() {
                 <p>
                     In partnership with our compassionate community, we aim to collect a sleigh-full of toys, games, and educational items to ensure that every child experiences the magic of the holiday season. From the tiniest tots to the bravest teens, your contributions will light up faces with happiness and hope.
                 </p>
+
+                <hr className="my-4" />
+
+                <h3>
+                    Get Involved
+                </h3>
+                <div className="w-full text-center flex space-x-5 justify-center">
+                    <a href='https://discord.gg/bv2gJbGngh' target='_blank' rel="noreferrer">
+                        <div className="flex flex-col items-center">
+                            <FontAwesomeIcon className="text-brand-teal" icon={faDiscord} size="2x" />
+                            <p className="text-sm">Join our Discord Server</p>
+                        </div>
+                    </a>
+
+                    <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">
+                        <div className="flex flex-col items-center">
+                            <FontAwesomeIcon className="text-brand-red" icon={faFacebook} size="2x" />
+                            <p className="text-sm">Facebook Group</p>
+                        </div>
+                    </a>
+
+                    <a href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
+                        <div className="flex flex-col items-center">
+                            <FontAwesomeIcon className="text-brand-blue" icon={faHandHoldingHeart} size="2x" />
+                            <p className="text-sm">Join the Fundraising Team</p>
+                        </div>
+                    </a>
+                </div>
             </section>
         </motion.div>
     )

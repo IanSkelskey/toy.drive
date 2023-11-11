@@ -20,6 +20,7 @@ export default function AboutPage() {
                         Hello and welcome! I'm Ian Skelskey, a shift supervisor and barista trainer at Bristol Plaza Starbucks, an educational assistant at Tunxis Community College and a software engineer. I'm thrilled to introduce you to our special toy drive initiative.
                     </p>
                 </div>
+                <hr className="my-10" />
                 <h3>Our Journey</h3>
                 <p>
                     This journey began in 2019 as a heartwarming partnership between Starbucks and Connecticut Children's Medical Center. What started with a humble collection of around 50 toys has blossomed into something truly remarkable. In our most recent drive in 2021, we collected nearly 200 toys! Not only that, but we also began fundraising, setting up an official give page through the hospital and raising a few hundred dollars to further support the cause.

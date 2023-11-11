@@ -27,6 +27,6 @@
         @apply flex flex-col items-center overflow-x-clip max-w-4xl
     }
     .content-section {
-        @apply bg-white p-4 bg-opacity-60 rounded-lg mb-4 text-center
+        @apply bg-white p-4 sm:px-20 bg-opacity-60 rounded-lg mb-4 text-center
     }
 }

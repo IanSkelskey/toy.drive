@@ -62,6 +62,7 @@ function App() {
           </section>
         </footer>
       </div>
+      <div className="bg-gift-pile w-96 h-96 absolute bottom-0 right-0 -z-50" />
     </Router>
   );
 }

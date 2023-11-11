@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/toy.drive/static/css/main.f4e5abc2.css",
-    "main.js": "/toy.drive/static/js/main.994c983a.js",
+    "main.css": "/toy.drive/static/css/main.79b5a082.css",
+    "main.js": "/toy.drive/static/js/main.57dfdfbb.js",
     "static/js/787.6f69f76b.chunk.js": "/toy.drive/static/js/787.6f69f76b.chunk.js",
     "static/media/ian.png": "/toy.drive/static/media/ian.739022e271c5e8648f92.png",
     "static/media/background.png": "/toy.drive/static/media/background.42d148da93c53b89bbfe.png",
@@ -9,12 +9,13 @@
     "static/media/banner.svg": "/toy.drive/static/media/banner.0ea51ba003c43a06dbb5d09d292c4a2d.svg",
     "static/media/drive-logo.svg": "/toy.drive/static/media/drive-logo.671b5e4323add99ba38c4fb171da83a0.svg",
     "index.html": "/toy.drive/index.html",
-    "main.f4e5abc2.css.map": "/toy.drive/static/css/main.f4e5abc2.css.map",
-    "main.994c983a.js.map": "/toy.drive/static/js/main.994c983a.js.map",
+    "static/media/candy-cane-pattern.svg": "/toy.drive/static/media/candy-cane-pattern.35b805d5f543886c530b.svg",
+    "main.79b5a082.css.map": "/toy.drive/static/css/main.79b5a082.css.map",
+    "main.57dfdfbb.js.map": "/toy.drive/static/js/main.57dfdfbb.js.map",
     "787.6f69f76b.chunk.js.map": "/toy.drive/static/js/787.6f69f76b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4e5abc2.css",
-    "static/js/main.994c983a.js"
+    "static/css/main.79b5a082.css",
+    "static/js/main.57dfdfbb.js"
   ]
 }

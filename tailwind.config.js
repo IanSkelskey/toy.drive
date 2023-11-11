@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         'etna': ['etna', 'sans-serif'],
         'mostra-nuova': ['mostra-nuova', 'sans serif'],
+      },
+      listStyle: {
+        'snowflake': 'url("../public/snowflake.svg")',
       }
     },
   },

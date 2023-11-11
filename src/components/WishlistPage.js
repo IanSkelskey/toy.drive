@@ -12,7 +12,7 @@ export default function WishlistPage() {
         >
             <section className="content-section">
                 <h2>Wishlist</h2>
-                <ul className="px-4 mb-2 list-inside list-disc">
+                <ul className="px-4 mb-2 list-inside list-disc text-left text-xl">
                     <li>
                         Bubbles
                     </li>

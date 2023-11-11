@@ -18,12 +18,6 @@ export default function LandingPage() {
                 <h2>
                     Join the Connecticut Community Holiday Toy Drive
                 </h2>
-                <p>
-                    Greetings, kind hearts and joyful givers! We're delighted to welcome you to our annual Holiday Toy Drive, a special initiative dedicated to bringing smiles and joy to the children at Connecticut Children's Medical Center. As the season of cheer unfolds, your generosity can make all the difference in the lives of those who need it most.
-                </p>
-                <p>
-                    Use the link below to make monetary donations, or drop off toys at any of our locations.
-                </p>
                 <div className="w-full flex flex-col items-center space-y-5 my-4">
                     <img className="w-32 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
                     <a
@@ -34,6 +28,14 @@ export default function LandingPage() {
                         Donate Now
                     </a>
                 </div>
+
+                <p>
+                    Greetings, kind hearts and joyful givers! We're delighted to welcome you to our annual Holiday Toy Drive, a special initiative dedicated to bringing smiles and joy to the children at Connecticut Children's Medical Center. As the season of cheer unfolds, your generosity can make all the difference in the lives of those who need it most.
+                </p>
+                <p>
+                    Use the link above to make monetary donations, or drop off toys at any of our locations.
+                </p>
+
                 <h3>Drop-off Locations</h3>
                 <p>
                     You can drop off toys at any of the following locations:

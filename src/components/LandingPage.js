@@ -40,7 +40,7 @@ export default function LandingPage() {
                 <p>
                     You can drop off toys at any of the following locations:
                 </p>
-                <ul className="list-disc list-inside mb-2 text-lg">
+                <ul className="list-disc list-inside mb-2 text-xl">
                     <li>
                         Bristol Plaza Starbucks - 641 Farmington Ave, Bristol, CT 06010
                     </li>

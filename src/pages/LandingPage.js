@@ -58,21 +58,21 @@ export default function LandingPage() {
                 <div className="w-full text-center flex space-x-5 justify-center">
                     <a href='https://discord.gg/bv2gJbGngh' target='_blank' rel="noreferrer">
                         <div className="flex flex-col items-center">
-                            <FontAwesomeIcon className="text-brand-teal" icon={faDiscord} size="2x" />
+                            <FontAwesomeIcon className="text-brand-teal py-2" icon={faDiscord} size="2x" />
                             <p className="text-sm">Join our Discord Server</p>
                         </div>
                     </a>
 
                     <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
-                            <FontAwesomeIcon className="text-brand-red" icon={faFacebook} size="2x" />
+                            <FontAwesomeIcon className="text-brand-red py-2" icon={faFacebook} size="2x" />
                             <p className="text-sm">Facebook Group</p>
                         </div>
                     </a>
 
                     <a href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
-                            <FontAwesomeIcon className="text-brand-blue" icon={faHandHoldingHeart} size="2x" />
+                            <FontAwesomeIcon className="text-brand-blue py-2" icon={faHandHoldingHeart} size="2x" />
                             <p className="text-sm">Join the Fundraising Team</p>
                         </div>
                     </a>

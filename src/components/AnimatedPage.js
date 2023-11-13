@@ -13,7 +13,7 @@ export default function AnimatedPage({ children }) {
             animate="in"
             exit="out"
             variants={pageVariants}
-            transition={{ type: "tween", ease: "anticipate", duration: 0.5 }}
+            transition={{ type: "tween", ease: "easeIn", duration: 0.3 }}
         >
             {children}
         </motion.div>

@@ -2,6 +2,7 @@ import ian from "../assets/ian.png";
 import sbuxLogo from "../assets/starbucks-logo.svg";
 import tunxisLogo from "../assets/tunxis-logo.png";
 import AnimatedPage from "../components/AnimatedPage";
+import drivePhoto2019 from "../assets/drive-photo-2019.jpg";
 
 export default function AboutPage() {
     return (
@@ -16,10 +17,16 @@ export default function AboutPage() {
                     </p>
                 </div>
                 <hr className="my-10" />
-                <h3>Our Journey</h3>
-                <p>
-                    This journey began in 2019 as a heartwarming partnership between Starbucks and Connecticut Children's Medical Center. What started with a humble collection of around 50 toys has blossomed into something truly remarkable. In our most recent drive in 2021, we collected nearly 200 toys! Not only that, but we also began fundraising, setting up an official give page through the hospital and raising a few hundred dollars to further support the cause.
-                </p>
+
+                <div className="flex sm:flex-row flex-col items-center space-x-5">
+                    <img src={drivePhoto2019} className="rounded-2xl w-full sm:w-1/3" alt='Ian Skelskey, the host of the toy drive.' />
+                    <p>
+                        <h3>Our Journey</h3>
+                        This journey began in 2019 as a heartwarming partnership between Starbucks and Connecticut Children's Medical Center. What started with a humble collection of around 50 toys has blossomed into something truly remarkable. In our most recent drive in 2021, we collected nearly 200 toys! Not only that, but we also began fundraising, setting up an official give page through the hospital and raising a few hundred dollars to further support the cause.
+                    </p>
+                </div>
+
+
                 <h3>Expanding Our Horizons</h3>
                 <p>
                     This year, we faced a new challenge: a lack of corporate marketing support. But that didn't slow us down. Instead, it sparked creativity in our approach. I took the initiative to design this website to organize all relevant information and help expand our efforts. Our goal is to keep the spirit of giving alive, not just through this website but also by maintaining our <a className="link" href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">Facebook group</a> and launching a new <a className="link" href='https://discord.gg/bv2gJbGngh' target="_blank" rel="noreferrer">Discord server</a> this holiday season.

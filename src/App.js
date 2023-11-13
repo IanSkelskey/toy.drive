@@ -15,7 +15,6 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-
         <Route path="/toy.drive/" element={<LandingPage />} />
         <Route path="/toy.drive/about" element={<AboutPage />} />
         <Route path="/toy.drive/drop-off" element={<DropOffPage />} />

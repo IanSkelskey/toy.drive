@@ -1,23 +1,18 @@
 import toyDriveLogo from "../assets/drive-logo.svg";
-import { motion } from "framer-motion";
-import { pageVariants } from "../utils/animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
+import AnimatedPage from "../components/AnimatedPage";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
     return (
-        <motion.div
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={{ type: "tween", ease: "anticipate", duration: 0.5 }}
-        >
+        <AnimatedPage>
             <section className="content-section">
                 <h2>
                     Join the Connecticut Community Holiday Toy Drive
                 </h2>
+                <p>Now - December 15th</p>
                 <div className="w-full flex flex-col items-center space-y-5 my-4">
                     <img className="w-32 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
                     <a
@@ -36,7 +31,9 @@ export default function LandingPage() {
                     Use the link above to make monetary donations, or drop off toys at any of our locations.
                 </p>
 
-                <h3>Drop-off Locations</h3>
+                <Link to='/toy.drive/drop-off'>
+                    <h3 className="link">Drop-off Locations</h3>
+                </Link>
                 <p>
                     You can drop off toys at any of the following locations:
                 </p>
@@ -81,6 +78,6 @@ export default function LandingPage() {
                     </a>
                 </div>
             </section>
-        </motion.div>
+        </AnimatedPage>
     )
 }

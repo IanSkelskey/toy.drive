@@ -1,15 +1,8 @@
-import { motion } from "framer-motion";
-import { pageVariants } from "../utils/animation";
+import AnimatedPage from "../components/AnimatedPage";
 
 export default function WishlistPage() {
     return (
-        <motion.div
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={{ type: "tween", ease: "anticipate", duration: 0.5 }}
-        >
+        <AnimatedPage>
             <section className="content-section">
                 <h2>Wishlist</h2>
                 <ul className="px-4 mb-2 list-inside list-disc text-left text-xl">
@@ -84,6 +77,6 @@ export default function WishlistPage() {
                     maintaining warmth.
                 </p>
             </section>
-        </motion.div>
+        </AnimatedPage>
     )
 }

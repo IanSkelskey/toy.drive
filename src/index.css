@@ -23,6 +23,9 @@
 }
 
 @layer components {
+    .link {
+        @apply text-brand-red hover:text-brand-blue underline
+    }
     .content {
         @apply flex flex-col items-center overflow-x-clip max-w-4xl
     }

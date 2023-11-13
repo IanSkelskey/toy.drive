@@ -1,18 +1,11 @@
 import ian from "../assets/ian.png";
-import { motion } from "framer-motion";
-import { pageVariants } from "../utils/animation";
 import sbuxLogo from "../assets/starbucks-logo.svg";
 import tunxisLogo from "../assets/tunxis-logo.png";
+import AnimatedPage from "../components/AnimatedPage";
 
 export default function AboutPage() {
     return (
-        <motion.div
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={{ type: "tween", ease: "anticipate", duration: 0.5 }}
-        >
+        <AnimatedPage>
             <section className="content-section">
                 <h2>About Us</h2>
                 <p>🎅 Welcome to the Season of Giving, 2023!</p>
@@ -29,7 +22,7 @@ export default function AboutPage() {
                 </p>
                 <h3>Expanding Our Horizons</h3>
                 <p>
-                    This year, we faced a new challenge: a lack of corporate marketing support. But that didn't slow us down. Instead, it sparked creativity in our approach. I took the initiative to design this website to organize all relevant information and help expand our efforts. Our goal is to keep the spirit of giving alive, not just through this website but also by maintaining our Facebook group and launching a new Discord server this holiday season.
+                    This year, we faced a new challenge: a lack of corporate marketing support. But that didn't slow us down. Instead, it sparked creativity in our approach. I took the initiative to design this website to organize all relevant information and help expand our efforts. Our goal is to keep the spirit of giving alive, not just through this website but also by maintaining our <a className="link" href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">Facebook group</a> and launching a new <a className="link" href='https://discord.gg/bv2gJbGngh' target="_blank" rel="noreferrer">Discord server</a> this holiday season.
                 </p>
                 <h3>Join Us in Making a Difference</h3>
                 <p>
@@ -45,7 +38,7 @@ export default function AboutPage() {
                     <img src={tunxisLogo} alt="Tunxis Logo" />
                 </div>
             </section>
-        </motion.div>
+        </AnimatedPage>
 
     )
 }

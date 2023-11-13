@@ -12,7 +12,7 @@ export default function LandingPage() {
                 <h2>
                     Join the Connecticut Community Holiday Toy Drive
                 </h2>
-                <p>Now - December 15th</p>
+                <p>Now - December 15th 2023</p>
                 <div className="w-full flex flex-col items-center space-y-5 my-4">
                     <img className="w-32 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
                     <a

@@ -26,11 +26,12 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-
+                <hr className="my-10" />
                 <h3>Expanding Our Horizons</h3>
                 <p>
                     This year, we faced a new challenge: a lack of corporate marketing support. But that didn't slow us down. Instead, it sparked creativity in our approach. I took the initiative to design this website to organize all relevant information and help expand our efforts. Our goal is to keep the spirit of giving alive, not just through this website but also by maintaining our <a className="link" href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">Facebook group</a> and launching a new <a className="link" href='https://discord.gg/bv2gJbGngh' target="_blank" rel="noreferrer">Discord server</a> this holiday season.
                 </p>
+                <hr className="my-10" />
                 <h3>Join Us in Making a Difference</h3>
                 <p>
                     Your support means the world to us and, more importantly, to the children who benefit from our collective efforts. Whether it's donating a toy, contributing financially, or simply spreading the word, every bit of help counts.

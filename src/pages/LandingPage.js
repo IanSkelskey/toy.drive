@@ -39,7 +39,7 @@ export default function LandingPage() {
                 </p>
                 <ul className="list-disc list-inside mb-2 text-xl">
                     <li>
-                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/SxYQ9Nk1KQ2UhSAs7'>
+                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/Z1WjSZ93vp5RSik4A'>
                             Bristol Plaza Starbucks - 641 Farmington Ave, Bristol, CT 06010
                         </a>
                     </li>
@@ -49,7 +49,7 @@ export default function LandingPage() {
                         </a>
                     </li>
                     <li>
-                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/zXjVimtGreGxKbai8'>
+                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/dAbe3ad7DdrfV3rB8'>
                             CT State Tunxis - 271 Scott Swamp Rd, Farmington, CT 06032
                         </a>
                     </li>

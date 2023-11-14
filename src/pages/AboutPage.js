@@ -3,6 +3,7 @@ import sbuxLogo from '../assets/starbucks-logo.svg';
 import tunxisLogo from '../assets/tunxis-logo.png';
 import AnimatedPage from '../components/AnimatedPage';
 import drivePhoto2019 from '../assets/drive-photo-2019.jpg';
+import { discordServerURL, facebookGroupURL } from '../utils/externalUrls';
 
 export default function AboutPage() {
     return (
@@ -56,7 +57,7 @@ export default function AboutPage() {
                     maintaining our{' '}
                     <a
                         className="link"
-                        href="https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw"
+                        href={facebookGroupURL}
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -65,7 +66,7 @@ export default function AboutPage() {
                     and launching a new{' '}
                     <a
                         className="link"
-                        href="https://discord.gg/bv2gJbGngh"
+                        href={discordServerURL}
                         target="_blank"
                         rel="noreferrer"
                     >

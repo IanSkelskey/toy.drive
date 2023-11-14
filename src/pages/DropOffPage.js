@@ -11,7 +11,7 @@ export default function DropOffPage() {
                 <hr className="my-10" />
                 <h3>Bristol Plaza Starbucks</h3>
                 <p>
-                    Drop-off bins for toys are located in the lobby of Bristol Plaza Starbucks.
+                    Drop-off bins for toys are located in the lobby of Bristol Plaza Starbucks. 
                 </p>
                 <p>
                     <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/SxYQ9Nk1KQ2UhSAs7'>

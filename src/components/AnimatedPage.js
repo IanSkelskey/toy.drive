@@ -9,6 +9,7 @@ const pageVariants = {
 export default function AnimatedPage({ children }) {
     return (
         <motion.div
+            className="w-full"
             initial="initial"
             animate="in"
             exit="out"

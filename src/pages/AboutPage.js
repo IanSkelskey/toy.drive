@@ -17,7 +17,6 @@ export default function AboutPage() {
                     </p>
                 </div>
                 <hr className="my-10" />
-
                 <div className="flex sm:flex-row flex-col items-center space-x-5">
                     <img src={drivePhoto2019} className="rounded-2xl w-full sm:w-1/3" alt='Ian Skelskey, the host of the toy drive.' />
                     <p>
@@ -25,7 +24,6 @@ export default function AboutPage() {
                         This journey began in 2019 as a heartwarming partnership between Starbucks and Connecticut Children's Medical Center. What started with a humble collection of around 50 toys has blossomed into something truly remarkable. In our most recent drive in 2021, we collected nearly 200 toys! Not only that, but we also began fundraising, setting up an official give page through the hospital and raising a few hundred dollars to further support the cause.
                     </p>
                 </div>
-
                 <hr className="my-10" />
                 <h3>Expanding Our Horizons</h3>
                 <p>

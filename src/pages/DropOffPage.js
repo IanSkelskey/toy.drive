@@ -31,7 +31,7 @@ export default function DropOffPage() {
                         1450 Farmington Ave, Bristol, CT 06010
                     </a>
                 </p>
-                <iframe className="w-full aspect-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.118571264674!2d-72.89865402425863!3d41.696375955669325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7b1d93ef485a9%3A0x48a71b6bb120f47c!2sStarbucks!5e0!3m2!1sen!2sus!4v1699926409168!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className="w-full aspect-square" title="Starbucks Rt 6 & Camp Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.118571264674!2d-72.89865402425863!3d41.696375955669325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7b1d93ef485a9%3A0x48a71b6bb120f47c!2sStarbucks!5e0!3m2!1sen!2sus!4v1699926409168!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
                 <hr className="my-10" />

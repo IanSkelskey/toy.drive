@@ -4,6 +4,7 @@ import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
 import AnimatedPage from "../components/AnimatedPage";
 import { Link } from "react-router-dom";
+import { donateURL, fundraisingURL, discordServerURL, facebookGroupURL, bristolPlazaStarbucksMapURL, bristolRt6CampMapURL, tunxisMapURL } from "../utils/externalUrls";
 
 export default function LandingPage() {
     return (
@@ -16,7 +17,7 @@ export default function LandingPage() {
                 <div className="w-full flex flex-col items-center space-y-5 my-4">
                     <img className="w-32 rounded-md" src={toyDriveLogo} alt="Toy Drive Logo" />
                     <a
-                        href="https://give.connecticutchildrens.org/give/t539713/#!/donation/checkout"
+                        href={donateURL}
                         target="_blank"
                         rel="noreferrer"
                         className="bg-brand-red hover:bg-brand-blue text-white text-xl font-bold py-2 px-4 rounded-md">
@@ -39,17 +40,17 @@ export default function LandingPage() {
                 </p>
                 <ul className="list-disc list-inside mb-2 text-xl">
                     <li>
-                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/Z1WjSZ93vp5RSik4A'>
+                        <a className="link" target="_blank" rel="noreferrer" href={bristolPlazaStarbucksMapURL}>
                             Bristol Plaza Starbucks - 641 Farmington Ave, Bristol, CT 06010
                         </a>
                     </li>
                     <li>
-                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/4oH99njkedwJEGKYA'>
+                        <a className="link" target="_blank" rel="noreferrer" href={bristolRt6CampMapURL}>
                             Bristol Starbucks Rt 6 & Camp - 1450 Farmington Ave, Bristol, CT 06010
                         </a>
                     </li>
                     <li>
-                        <a className="link" target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/dAbe3ad7DdrfV3rB8'>
+                        <a className="link" target="_blank" rel="noreferrer" href={tunxisMapURL}>
                             CT State Tunxis - 271 Scott Swamp Rd, Farmington, CT 06032
                         </a>
                     </li>
@@ -65,21 +66,21 @@ export default function LandingPage() {
                     Get Involved
                 </h3>
                 <div className="w-full text-center flex space-x-5 justify-center">
-                    <a href='https://discord.gg/bv2gJbGngh' target='_blank' rel="noreferrer">
+                    <a href={discordServerURL} target='_blank' rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon className="text-brand-teal py-2" icon={faDiscord} size="2x" />
                             <p className="text-sm">Join our Discord Server</p>
                         </div>
                     </a>
 
-                    <a href='https://www.facebook.com/groups/sbuxtoydrive/?mibextid=oMANbw' target="_blank" rel="noreferrer">
+                    <a href={facebookGroupURL} target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon className="text-brand-red py-2" icon={faFacebook} size="2x" />
                             <p className="text-sm">Facebook Group</p>
                         </div>
                     </a>
 
-                    <a href='https://give.connecticutchildrens.org/team/539713' target="_blank" rel="noreferrer">
+                    <a href={fundraisingURL} target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon className="text-brand-blue py-2" icon={faHandHoldingHeart} size="2x" />
                             <p className="text-sm">Join the Fundraising Team</p>

@@ -7,7 +7,7 @@ export default function Header() {
     const toyGoal = 300;
 
     const cashProgress = 100;
-    const toyProgress = 4;
+    const toyProgress = 8;
 
     return (
         <header className="w-full max-w-lg flex flex-col items-center pb-2">

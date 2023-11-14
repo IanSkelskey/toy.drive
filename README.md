@@ -19,5 +19,6 @@ git clone https://github.com/IanSkelskey/toy.drive.git
 cd toy.drive
 npm install
 ```
+
 To run the project locally:
-```npm start```
+`npm start`

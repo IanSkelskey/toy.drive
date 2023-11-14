@@ -3,9 +3,10 @@ export default function Footer() {
         <footer className="w-full">
             <section className="content-section">
                 <p>
-                    Website designed and developed by Ian Skelskey. All rights reserved. © 2023
+                    Website designed and developed by Ian Skelskey. All rights
+                    reserved. © 2023
                 </p>
             </section>
         </footer>
-    )
+    );
 }

@@ -1,13 +1,24 @@
 import banner from '../assets/banner.svg';
 import ccmcBanner from '../assets/ccmc-banner-logo.svg';
 import ProgressBar from './ProgressBar';
+import fetchDonationProgress from '../utils/fetchDonations';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
-    const cashGoal = 2000;
-    const toyGoal = 300;
+    const [donationProgress, setDonationProgress] = useState(0);
+    const [donationGoal, setDonationGoal] = useState(0);
 
-    const cashProgress = 100;
+    const toyGoal = 300;
     const toyProgress = 8;
+
+    useEffect(() => {
+        const fetchDonationProgress = async () => {
+            const donationProgress = await fetchDonationProgress();
+            console.log(donationProgress);
+        }
+        fetchDonationProgress();
+
+    }, []);
 
     return (
         <header className="w-full max-w-lg flex flex-col items-center pb-2">
@@ -19,8 +30,8 @@ export default function Header() {
             <img src={banner} alt="Banner" className="w-full mb-2" />
             <div className="w-full flex p-2 text-xl space-x-5 bg-white bg-opacity-60 rounded-lg mb-4">
                 <ProgressBar
-                    progress={cashProgress}
-                    goal={cashGoal}
+                    progress={donationProgress}
+                    goal={donationGoal}
                     title="Cash Goal"
                     emoji="💰"
                 />

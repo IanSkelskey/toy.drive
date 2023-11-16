@@ -12,11 +12,18 @@ export default function Header() {
     const toyProgress = 8;
 
     useEffect(() => {
-        const fetchDonationProgress = async () => {
-            const donationProgress = await fetchDonationProgress();
-            console.log(donationProgress);
+        const fetchProgress = async () => {
+            const donationData = await fetchDonationProgress();
+            if (donationData) {
+                console.log(donationData);
+                setDonationProgress(donationData.progressAmount);
+                setDonationGoal(donationData.goalAmount);
+            } else {
+                console.log("No new donation data available.");
+            }
+            
         }
-        fetchDonationProgress();
+        fetchProgress();
 
     }, []);
 

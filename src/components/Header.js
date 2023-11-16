@@ -15,16 +15,13 @@ export default function Header() {
         const fetchProgress = async () => {
             const donationData = await fetchDonationProgress();
             if (donationData) {
-                console.log(donationData);
-                setDonationProgress(donationData.progressAmount);
-                setDonationGoal(donationData.goalAmount);
+                setDonationProgress(convertCurrencyStringToNumber(donationData.progressAmount));
+                setDonationGoal(convertCurrencyStringToNumber(donationData.goalAmount));
             } else {
                 console.log("No new donation data available.");
             }
-            
         }
         fetchProgress();
-
     }, []);
 
     return (
@@ -51,4 +48,8 @@ export default function Header() {
             </div>
         </header>
     );
+}
+
+function convertCurrencyStringToNumber(currencyString) {
+    return parseInt(currencyString.replace(/[$,]/g, ''), 10);
 }

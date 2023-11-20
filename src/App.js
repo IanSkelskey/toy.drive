@@ -12,6 +12,7 @@ import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
+import CustomRouter from './components/CustomRouter';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -30,14 +31,14 @@ function AnimatedRoutes() {
 
 function App() {
     return (
-        <Router>
+        <CustomRouter>
             <div className="content">
                 <Header />
                 <NavBar />
                 <AnimatedRoutes />
                 <Footer />
             </div>
-        </Router>
+        </CustomRouter>
     );
 }
 

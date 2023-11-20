@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/toy.drive/static/css/main.0e26db3f.css",
-    "main.js": "/toy.drive/static/js/main.83b2cf2e.js",
+    "main.js": "/toy.drive/static/js/main.892cd021.js",
     "static/js/787.6f69f76b.chunk.js": "/toy.drive/static/js/787.6f69f76b.chunk.js",
     "static/media/ian.png": "/toy.drive/static/media/ian.739022e271c5e8648f92.png",
     "static/media/drive-photo-2019.jpg": "/toy.drive/static/media/drive-photo-2019.e3d595bf6d2c1f3b7977.jpg",
@@ -14,11 +14,11 @@
     "index.html": "/toy.drive/index.html",
     "static/media/candy-cane-pattern.svg": "/toy.drive/static/media/candy-cane-pattern.35b805d5f543886c530b.svg",
     "main.0e26db3f.css.map": "/toy.drive/static/css/main.0e26db3f.css.map",
-    "main.83b2cf2e.js.map": "/toy.drive/static/js/main.83b2cf2e.js.map",
+    "main.892cd021.js.map": "/toy.drive/static/js/main.892cd021.js.map",
     "787.6f69f76b.chunk.js.map": "/toy.drive/static/js/787.6f69f76b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e26db3f.css",
-    "static/js/main.83b2cf2e.js"
+    "static/js/main.892cd021.js"
   ]
 }

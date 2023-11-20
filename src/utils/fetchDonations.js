@@ -12,12 +12,15 @@ export default async function fetchDonationProgress() {
         return null;
     }
 
-    const latestDonation = querySnapshot.docs.map(doc => doc.data())[0];
+    const latestDonation = querySnapshot.docs.map((doc) => doc.data())[0];
 
-    if (!lastFetchedTimestamp || new Date(latestDonation.timestamp) > new Date(lastFetchedTimestamp)) {
+    if (
+        !lastFetchedTimestamp ||
+        new Date(latestDonation.timestamp) > new Date(lastFetchedTimestamp)
+    ) {
         localStorage.setItem('lastFetchedTimestamp', latestDonation.timestamp);
         return latestDonation;
     } else {
         return latestDonation;
     }
-};
+}

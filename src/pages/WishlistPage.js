@@ -8,9 +8,7 @@ export default function WishlistPage() {
                 <h2>Wishlist</h2>
                 <ul className="px-4 mb-2 list-inside list-disc text-left text-xl">
                     {wishlist.map((item) => (
-                        <li key={item}>
-                            {item}
-                        </li>
+                        <li key={item}>{item}</li>
                     ))}
                 </ul>
                 <hr className="my-4" />

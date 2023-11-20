@@ -89,6 +89,32 @@ export default function DropOffPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
+                <hr className="my-10" />
+                <h3>{sponsors.ufcGymSouthington.name}</h3>
+                <p>
+                    Drop-off bins for toys are located in UFC Gym Southington.
+                </p>
+                <p>
+                    <a
+                        className="link"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={sponsors.ufcGymSouthington.mapUrl}
+                    >
+                        {sponsors.ufcGymSouthington.address}
+                    </a>
+                </p>
+                <div className="bg-candy-cane-pattern w-full p-4">
+                    <iframe
+                        className="w-full aspect-square sm:aspect-video"
+                        title="UFC Gym Southington Map"
+                        src={sponsors.ufcGymSouthington.mapEmbedUrl}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+                </div>
+
             </section>
         </AnimatedPage>
     );

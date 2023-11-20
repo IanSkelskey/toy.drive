@@ -4,15 +4,10 @@ import { faDiscord, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
 import AnimatedPage from '../components/AnimatedPage';
 import { Link } from 'react-router-dom';
-import {
-    donateURL,
-    fundraisingURL,
-    discordServerURL,
-    facebookGroupURL,
-    bristolPlazaStarbucksMapURL,
-    bristolRt6CampMapURL,
-    tunxisMapURL,
-} from '../utils/externalUrls';
+import 
+    sponsors
+from '../const/sponsors';
+import socialUrls from '../const/socialUrls';
 
 export default function LandingPage() {
     return (
@@ -27,7 +22,7 @@ export default function LandingPage() {
                         alt="Toy Drive Logo"
                     />
                     <a
-                        href={donateURL}
+                        href={socialUrls.donate}
                         target="_blank"
                         rel="noreferrer"
                         className="bg-brand-red hover:bg-brand-blue text-white text-xl font-bold py-2 px-4 rounded-md"
@@ -59,10 +54,9 @@ export default function LandingPage() {
                             className="link"
                             target="_blank"
                             rel="noreferrer"
-                            href={bristolPlazaStarbucksMapURL}
+                            href={sponsors.starbucks[0].mapUrl}
                         >
-                            Bristol Plaza Starbucks - 641 Farmington Ave,
-                            Bristol, CT 06010
+                            {sponsors.starbucks[0].name} - {sponsors.starbucks[0].address}
                         </a>
                     </li>
                     <li>
@@ -70,10 +64,9 @@ export default function LandingPage() {
                             className="link"
                             target="_blank"
                             rel="noreferrer"
-                            href={bristolRt6CampMapURL}
+                            href={sponsors.starbucks[1].mapUrl}
                         >
-                            Bristol Starbucks Rt 6 & Camp - 1450 Farmington Ave,
-                            Bristol, CT 06010
+                            {sponsors.starbucks[1].name} - {sponsors.starbucks[1].address}
                         </a>
                     </li>
                     <li>
@@ -81,10 +74,9 @@ export default function LandingPage() {
                             className="link"
                             target="_blank"
                             rel="noreferrer"
-                            href={tunxisMapURL}
+                            href={sponsors.tunxis.mapUrl}
                         >
-                            CT State Tunxis - 271 Scott Swamp Rd, Farmington, CT
-                            06032
+                            {sponsors.tunxis.name} - {sponsors.tunxis.address}
                         </a>
                     </li>
                 </ul>
@@ -102,7 +94,7 @@ export default function LandingPage() {
 
                 <h3>Get Involved</h3>
                 <div className="w-full text-center flex space-x-5 justify-center">
-                    <a href={discordServerURL} target="_blank" rel="noreferrer">
+                    <a href={socialUrls.discordServer} target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon
                                 className="text-brand-teal py-2"
@@ -113,7 +105,7 @@ export default function LandingPage() {
                         </div>
                     </a>
 
-                    <a href={facebookGroupURL} target="_blank" rel="noreferrer">
+                    <a href={socialUrls.facebookGroup} target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon
                                 className="text-brand-red py-2"
@@ -124,7 +116,7 @@ export default function LandingPage() {
                         </div>
                     </a>
 
-                    <a href={fundraisingURL} target="_blank" rel="noreferrer">
+                    <a href={socialUrls.fundraising} target="_blank" rel="noreferrer">
                         <div className="flex flex-col items-center">
                             <FontAwesomeIcon
                                 className="text-brand-blue py-2"

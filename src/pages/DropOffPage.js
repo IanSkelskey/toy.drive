@@ -1,12 +1,7 @@
 import AnimatedPage from '../components/AnimatedPage';
-import {
-    bristolPlazaStarbucksMapURL,
-    bristolRt6CampMapURL,
-    tunxisMapURL,
-    bristolPlazaStarbucksMapEmbedURL,
-    bristolRt6CampMapEmbedURL,
-    tunxisMapEmbedURL,
-} from '../utils/externalUrls';
+import
+sponsors
+    from '../const/sponsors';
 
 export default function DropOffPage() {
     return (
@@ -26,7 +21,7 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={bristolPlazaStarbucksMapURL}
+                        href={sponsors.starbucks[0].mapUrl}
                     >
                         641 Farmington Ave, Bristol, CT 06010
                     </a>
@@ -35,7 +30,7 @@ export default function DropOffPage() {
                     <iframe
                         className="w-full aspect-square sm:aspect-video"
                         title="Starbucks Bristol Plaza Map"
-                        src={bristolPlazaStarbucksMapEmbedURL}
+                        src={sponsors.starbucks[0].mapEmbedUrl}
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
@@ -52,7 +47,7 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={bristolRt6CampMapURL}
+                        href={sponsors.starbucks[1].mapUrl}
                     >
                         1450 Farmington Ave, Bristol, CT 06010
                     </a>
@@ -63,7 +58,7 @@ export default function DropOffPage() {
                         target="_blank"
                         rel="noreferrer"
                         title="Starbucks Rt 6 & Camp Map"
-                        src={bristolRt6CampMapEmbedURL}
+                        src={sponsors.starbucks[1].mapEmbedUrl}
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
@@ -82,7 +77,7 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={tunxisMapURL}
+                        href={sponsors.tunxis.mapUrl}
                     >
                         271 Scott Swamp Rd, Farmington, CT 06032
                     </a>
@@ -91,7 +86,7 @@ export default function DropOffPage() {
                     <iframe
                         className="w-full aspect-square sm:aspect-video"
                         title="Tunxis Community College Map"
-                        src={tunxisMapEmbedURL}
+                        src={sponsors.tunxis.mapEmbedUrl}
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"

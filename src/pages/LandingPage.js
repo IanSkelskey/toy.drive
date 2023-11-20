@@ -79,6 +79,17 @@ export default function LandingPage() {
                             {sponsors.tunxis.name} - {sponsors.tunxis.address}
                         </a>
                     </li>
+                    <li>
+                        <a
+                            className="link"
+                            target="_blank"
+                            rel="noreferrer"
+                            href={sponsors.ufcGymSouthington.mapUrl}
+                        >
+                            {sponsors.ufcGymSouthington.name} - {sponsors.ufcGymSouthington.address}
+                        </a>
+                    </li>
+
                 </ul>
 
                 <p>

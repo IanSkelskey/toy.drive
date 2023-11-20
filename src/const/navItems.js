@@ -1,19 +1,19 @@
 const navItems = [
     {
         name: "Home",
-        link: "/toy.drive"
+        link: "/"
     },
     {
         name: "Wishlist",
-        link: "/toy.drive/wishlist"
+        link: "/wishlist"
     },
     {
         name: "Drop-off",
-        link: "/toy.drive/drop-off"
+        link: "/drop-off"
     },
     {
         name: "About",
-        link: "/toy.drive/about"
+        link: "/about"
     }
 ]
 

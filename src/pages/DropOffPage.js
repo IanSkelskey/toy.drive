@@ -1,12 +1,5 @@
 import AnimatedPage from '../components/AnimatedPage';
-import {
-    bristolPlazaStarbucksMapURL,
-    bristolRt6CampMapURL,
-    tunxisMapURL,
-    bristolPlazaStarbucksMapEmbedURL,
-    bristolRt6CampMapEmbedURL,
-    tunxisMapEmbedURL,
-} from '../utils/externalUrls';
+import sponsors from '../const/sponsors';
 
 export default function DropOffPage() {
     return (
@@ -15,8 +8,7 @@ export default function DropOffPage() {
                 <h2>Drop-off Locations</h2>
                 <p>You can drop off toys at any of the following locations:</p>
                 <hr className="my-10" />
-
-                <h3>Bristol Plaza Starbucks</h3>
+                <h3>{sponsors.starbucks[0].name}</h3>
                 <p>
                     Drop-off bins for toys are located in the lobby of Bristol
                     Plaza Starbucks.
@@ -26,23 +18,23 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={bristolPlazaStarbucksMapURL}
+                        href={sponsors.starbucks[0].mapUrl}
                     >
-                        641 Farmington Ave, Bristol, CT 06010
+                        {sponsors.starbucks[0].address}
                     </a>
                 </p>
                 <div className="bg-candy-cane-pattern w-full p-4">
                     <iframe
                         className="w-full aspect-square sm:aspect-video"
                         title="Starbucks Bristol Plaza Map"
-                        src={bristolPlazaStarbucksMapEmbedURL}
-                        allowfullscreen=""
+                        src={sponsors.starbucks[0].mapEmbedUrl}
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
                 <hr className="my-10" />
-                <h3>Bristol Starbucks Rt 6 & Camp</h3>
+                <h3>{sponsors.starbucks[1].name}</h3>
                 <p>
                     Drop-off bins for toys are located in the lobby of Bristol
                     Starbucks Rt 6 & Camp.
@@ -52,9 +44,9 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={bristolRt6CampMapURL}
+                        href={sponsors.starbucks[1].mapUrl}
                     >
-                        1450 Farmington Ave, Bristol, CT 06010
+                        {sponsors.starbucks[1].address}
                     </a>
                 </p>
                 <div className="bg-candy-cane-pattern w-full p-4">
@@ -63,15 +55,15 @@ export default function DropOffPage() {
                         target="_blank"
                         rel="noreferrer"
                         title="Starbucks Rt 6 & Camp Map"
-                        src={bristolRt6CampMapEmbedURL}
-                        allowfullscreen=""
+                        src={sponsors.starbucks[1].mapEmbedUrl}
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
 
                 <hr className="my-10" />
-                <h3>CT State Tunxis</h3>
+                <h3>{sponsors.tunxis.name}</h3>
                 <p>
                     Drop-off bins for toys are located in the Algebra Lab (300
                     Building) as well as in front of the Academic Success and
@@ -82,21 +74,47 @@ export default function DropOffPage() {
                         className="link"
                         target="_blank"
                         rel="noreferrer"
-                        href={tunxisMapURL}
+                        href={sponsors.tunxis.mapUrl}
                     >
-                        271 Scott Swamp Rd, Farmington, CT 06032
+                        {sponsors.tunxis.address}
                     </a>
                 </p>
                 <div className="bg-candy-cane-pattern w-full p-4">
                     <iframe
                         className="w-full aspect-square sm:aspect-video"
                         title="Tunxis Community College Map"
-                        src={tunxisMapEmbedURL}
-                        allowfullscreen=""
+                        src={sponsors.tunxis.mapEmbedUrl}
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
+                <hr className="my-10" />
+                <h3>{sponsors.ufcGymSouthington.name}</h3>
+                <p>
+                    Drop-off bins for toys are located in UFC Gym Southington.
+                </p>
+                <p>
+                    <a
+                        className="link"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={sponsors.ufcGymSouthington.mapUrl}
+                    >
+                        {sponsors.ufcGymSouthington.address}
+                    </a>
+                </p>
+                <div className="bg-candy-cane-pattern w-full p-4">
+                    <iframe
+                        className="w-full aspect-square sm:aspect-video"
+                        title="UFC Gym Southington Map"
+                        src={sponsors.ufcGymSouthington.mapEmbedUrl}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+                </div>
+
             </section>
         </AnimatedPage>
     );

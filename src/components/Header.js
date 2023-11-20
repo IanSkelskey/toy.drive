@@ -15,12 +15,16 @@ export default function Header() {
         const fetchProgress = async () => {
             const donationData = await fetchDonationProgress();
             if (donationData) {
-                setDonationProgress(convertCurrencyStringToNumber(donationData.progressAmount));
-                setDonationGoal(convertCurrencyStringToNumber(donationData.goalAmount));
+                setDonationProgress(
+                    convertCurrencyStringToNumber(donationData.progressAmount)
+                );
+                setDonationGoal(
+                    convertCurrencyStringToNumber(donationData.goalAmount)
+                );
             } else {
-                console.log("No new donation data available.");
+                console.log('No new donation data available.');
             }
-        }
+        };
         fetchProgress();
     }, []);
 

@@ -1,5 +1,4 @@
 export default function ProgressBar({ progress, goal, emoji }) {
-
     const percent = Math.round((progress / goal) * 100);
     return (
         <div className="flex items-center space-x-5 w-full">

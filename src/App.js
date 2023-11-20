@@ -1,5 +1,4 @@
 import {
-    BrowserRouter as Router,
     useLocation,
     Routes,
     Route,

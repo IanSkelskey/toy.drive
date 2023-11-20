@@ -3,7 +3,7 @@ import sbuxLogo from '../assets/starbucks-logo.svg';
 import tunxisLogo from '../assets/tunxis-logo.png';
 import AnimatedPage from '../components/AnimatedPage';
 import drivePhoto2019 from '../assets/drive-photo-2019.jpg';
-import { discordServerURL, facebookGroupURL } from '../utils/externalUrls';
+import socialUrls from '../const/socialUrls';
 
 export default function AboutPage() {
     return (
@@ -57,7 +57,7 @@ export default function AboutPage() {
                     maintaining our{' '}
                     <a
                         className="link"
-                        href={facebookGroupURL}
+                        href={socialUrls.facebookGroup}
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -66,7 +66,7 @@ export default function AboutPage() {
                     and launching a new{' '}
                     <a
                         className="link"
-                        href={discordServerURL}
+                        href={socialUrls.discordServer}
                         target="_blank"
                         rel="noreferrer"
                     >

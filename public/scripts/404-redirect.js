@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   sessionStorage.redirect = path;
   console.log('Stored in sessionStorage:', sessionStorage.redirect);
 
-  window.location.href = '/';
+  window.location.href = '/toy.drive';
   console.log('Redirecting to home page');
 });

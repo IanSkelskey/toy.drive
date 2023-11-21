@@ -27,7 +27,7 @@ export default function SponsorPage() {
                             >
                                 Visit Website
                             </a>
-                            <hr className='my-10 w-full' />
+                            <hr />
                         </div>
                     ))}
                 </div>

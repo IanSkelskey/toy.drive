@@ -1,4 +1,4 @@
-import { useLocation, Routes, Route } from 'react-router-dom';
+import { useLocation, Routes, Route, Navigate } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import WishlistPage from './pages/WishlistPage';
@@ -22,7 +22,8 @@ function AnimatedRoutes() {
                 <Route path="/drop-off" element={<DropOffPage />} />
                 <Route path="/wishlist" element={<WishlistPage />} />
                 <Route path="/sponsors" element={<SponsorPage />} />
-                <Route path='*' component={<NotFoundPage />} />
+                <Route path='/404' element={<NotFoundPage />} />
+                <Route path='*' element={<Navigate replace to='/404' />} />
             </Routes>
         </AnimatePresence>
     );

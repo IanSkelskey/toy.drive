@@ -1,5 +1,6 @@
 import React from 'react';
 import AnimatedPage from '../components/AnimatedPage';
+import { Link } from 'react-router-dom';
 
 export default function NotFoundPage() {
     return (
@@ -9,8 +10,8 @@ export default function NotFoundPage() {
                 <p>
                     Oops! The page you are looking for does not exist. It might have been moved or deleted.
                 </p>
-                <p>
-                    <a href="/">Go back to the homepage</a>
+                <p className='link'>
+                    <Link to="/">Return to the home page</Link>
                 </p>
             </section>
         </AnimatedPage>

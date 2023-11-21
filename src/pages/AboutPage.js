@@ -24,7 +24,7 @@ export default function AboutPage() {
                         special toy drive initiative.
                     </p>
                 </div>
-                <hr className="my-10" />
+                <hr />
                 <div className="flex sm:flex-row flex-col items-center space-x-5">
                     <img
                         src={drivePhoto2019}
@@ -44,7 +44,7 @@ export default function AboutPage() {
                         cause.
                     </p>
                 </div>
-                <hr className="my-10" />
+                <hr />
                 <h3>Expanding Our Horizons</h3>
                 <p>
                     This year, we faced a new challenge: a lack of corporate
@@ -73,7 +73,7 @@ export default function AboutPage() {
                     </a>{' '}
                     this holiday season.
                 </p>
-                <hr className="my-10" />
+                <hr />
                 <h3>Join Us in Making a Difference</h3>
                 <p>
                     Your support means the world to us and, more importantly, to
@@ -85,7 +85,7 @@ export default function AboutPage() {
                     Thank you for visiting, and let's make this year's toy drive
                     the most successful one yet!
                 </p>
-                <hr className="my-10" />
+                <hr />
                 <h2>Community Partners</h2>
                 <div className="flex justify-center space-x-5 h-12">
                     {sponsors.map((sponsor, index) => (

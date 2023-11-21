@@ -42,7 +42,7 @@ export default function LandingPage() {
                     toys at any of our locations.
                 </p>
 
-                <Link to="/toy.drive/drop-off">
+                <Link to="/drop-off">
                     <h3 className="link">Drop-off Locations</h3>
                 </Link>
                 <p>You can drop off toys at any of the following locations:</p>
@@ -72,7 +72,7 @@ export default function LandingPage() {
                     hope.
                 </p>
 
-                <hr className="my-4" />
+                <hr />
 
                 <h3>Get Involved</h3>
                 <div className="w-full text-center flex space-x-5 justify-center">

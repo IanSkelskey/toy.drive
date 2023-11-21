@@ -1,24 +1,24 @@
 const navItems = [
     {
-        name: "Home",
-        link: "/"
+        name: 'Home',
+        link: '/',
     },
     {
-        name: "Wishlist",
-        link: "/wishlist"
+        name: 'Wishlist',
+        link: '/wishlist',
     },
     {
-        name: "Drop-off",
-        link: "/drop-off"
+        name: 'Drop-off',
+        link: '/drop-off',
     },
     {
-        name: "About",
-        link: "/about"
+        name: 'About',
+        link: '/about',
     },
     {
-        name: "Sponsors",
-        link: "/sponsors"
-    }
-]
+        name: 'Sponsors',
+        link: '/sponsors',
+    },
+];
 
 export default navItems;

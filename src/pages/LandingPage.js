@@ -86,10 +86,10 @@ export default function LandingPage() {
                             rel="noreferrer"
                             href={sponsors.ufcGymSouthington.mapUrl}
                         >
-                            {sponsors.ufcGymSouthington.name} - {sponsors.ufcGymSouthington.address}
+                            {sponsors.ufcGymSouthington.name} -{' '}
+                            {sponsors.ufcGymSouthington.address}
                         </a>
                     </li>
-
                 </ul>
 
                 <p>

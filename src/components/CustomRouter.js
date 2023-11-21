@@ -6,11 +6,7 @@ const CustomRouter = ({ children }) => {
     // This assumes your app is hosted at 'https://ianskelskey.github.io/toy.drive'
     const basename = document.location.pathname.split('/')[1];
 
-    return (
-        <BrowserRouter basename={`/${basename}`}>
-            {children}
-        </BrowserRouter>
-    );
+    return <BrowserRouter basename={`/${basename}`}>{children}</BrowserRouter>;
 };
 
 export default CustomRouter;

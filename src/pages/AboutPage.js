@@ -89,7 +89,7 @@ export default function AboutPage() {
                 <h2>Community Partners</h2>
                 <div className="flex justify-center space-x-5 h-12">
                     {sponsors.map((sponsor, index) => (
-                        <img src={sponsor.logo} alt={sponsor.name + "logo"} />
+                        <img src={sponsor.logo} alt={sponsor.name + 'logo'} />
                     ))}
                 </div>
             </section>

@@ -12,12 +12,19 @@ export default function DropOffPage() {
                     <div key={index} className="flex flex-col items-center">
                         <h3>{sponsor.name}</h3>
                         <p>
-                        <ul>
-                            {sponsor.dropOffLocations.map((location, index) => (
-                                <li key={index}>{location}</li>
-                            ))}
-                        </ul>
-                            <a className="link" target="_blank" rel="noreferrer" href={sponsor.url}>
+                            <ul>
+                                {sponsor.dropOffLocations.map(
+                                    (location, index) => (
+                                        <li key={index}>{location}</li>
+                                    )
+                                )}
+                            </ul>
+                            <a
+                                className="link"
+                                target="_blank"
+                                rel="noreferrer"
+                                href={sponsor.url}
+                            >
                                 {sponsor.address}
                             </a>
                         </p>
@@ -33,8 +40,6 @@ export default function DropOffPage() {
                         <hr className="my-10" />
                     </div>
                 ))}
-
-
             </section>
         </AnimatedPage>
     );

@@ -6,8 +6,8 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'snowflake-pattern': "url('../public/background.png')",
-                'candy-cane-pattern': "url('../public/candy-cane-pattern.svg')",
+                'snowflake-pattern': "url('../public/assets/background.png')",
+                'candy-cane-pattern': "url('../public/assets/candy-cane-pattern.svg')",
             },
             colors: {
                 'brand-teal': '#00a885',

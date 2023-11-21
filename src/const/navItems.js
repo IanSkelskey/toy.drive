@@ -14,6 +14,10 @@ const navItems = [
     {
         name: "About",
         link: "/about"
+    },
+    {
+        name: "Sponsors",
+        link: "/sponsors"
     }
 ]
 

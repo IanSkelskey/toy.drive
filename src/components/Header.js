@@ -1,5 +1,5 @@
 import banner from '../assets/banner.svg';
-import ccmcBanner from '../assets/ccmc-banner-logo.svg';
+import ccmcBanner from '../assets/ccmc/ccmc-banner-logo.svg';
 import ProgressBar from './ProgressBar';
 import fetchDonationProgress from '../utils/fetchDonations';
 import { useEffect, useState } from 'react';

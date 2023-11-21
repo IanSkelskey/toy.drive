@@ -1,6 +1,5 @@
 import ian from '../assets/ian.png';
-import sbuxLogo from '../assets/starbucks-logo.svg';
-import tunxisLogo from '../assets/tunxis-logo.png';
+import sponsors from '../const/sponsors';
 import AnimatedPage from '../components/AnimatedPage';
 import drivePhoto2019 from '../assets/drive-photo-2019.jpg';
 import socialUrls from '../const/socialUrls';
@@ -89,8 +88,9 @@ export default function AboutPage() {
                 <hr className="my-10" />
                 <h2>Community Partners</h2>
                 <div className="flex justify-center space-x-5 h-12">
-                    <img src={sbuxLogo} alt="Starbucks Logo" />
-                    <img src={tunxisLogo} alt="Tunxis Logo" />
+                    {sponsors.map((sponsor, index) => (
+                        <img src={sponsor.logo} alt={sponsor.name + "logo"} />
+                    ))}
                 </div>
             </section>
         </AnimatedPage>

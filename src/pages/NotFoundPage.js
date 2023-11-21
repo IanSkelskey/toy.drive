@@ -8,9 +8,10 @@ export default function NotFoundPage() {
             <section className="content-section">
                 <h2>Page Not Found</h2>
                 <p>
-                    Oops! The page you are looking for does not exist. It might have been moved or deleted.
+                    Oops! The page you are looking for does not exist. It might
+                    have been moved or deleted.
                 </p>
-                <p className='link'>
+                <p className="link">
                     <Link to="/">Return to the home page</Link>
                 </p>
             </section>

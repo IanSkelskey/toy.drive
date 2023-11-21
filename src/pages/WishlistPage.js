@@ -21,7 +21,7 @@ export default function WishlistPage() {
                     or are unsafe/inappropriate for our patients, we reserve the
                     right to politely decline donations.
                 </p>
-                <hr  />
+                <hr />
                 <p>
                     *Please note: We no longer accept hats or loose blankets.
                     Sleep sacks are the best choice for swaddling babies and

@@ -18,7 +18,7 @@
         @apply text-2xl mb-3;
     }
     hr {
-        @apply my-10 w-full
+        @apply my-10 w-full;
     }
     p {
         @apply mb-2;

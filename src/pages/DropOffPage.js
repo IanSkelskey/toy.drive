@@ -6,8 +6,11 @@ export default function DropOffPage() {
         <AnimatedPage>
             <section className="content-section">
                 <h2>Drop-off Locations</h2>
-                <p>We are very proud to have four drop-off locations this year. Thank you Tunxis and UFC Southington for joining the cause!
-                    You can drop off toys at any of the following locations:</p>
+                <p>
+                    We are very proud to have four drop-off locations this year.
+                    Thank you Tunxis and UFC Southington for joining the cause!
+                    You can drop off toys at any of the following locations:
+                </p>
                 <hr />
                 {sponsors.map((sponsor, index) =>
                     sponsor.dropOffLocations.map((location, index) => (

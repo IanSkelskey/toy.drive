@@ -22,8 +22,8 @@ function AnimatedRoutes() {
                 <Route path="/drop-off" element={<DropOffPage />} />
                 <Route path="/wishlist" element={<WishlistPage />} />
                 <Route path="/sponsors" element={<SponsorPage />} />
-                <Route path='/404' element={<NotFoundPage />} />
-                <Route path='*' element={<Navigate replace to='/404' />} />
+                <Route path="/404" element={<NotFoundPage />} />
+                <Route path="*" element={<Navigate replace to="/404" />} />
             </Routes>
         </AnimatePresence>
     );

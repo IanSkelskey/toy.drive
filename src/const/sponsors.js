@@ -32,7 +32,7 @@ const sponsors = [
     },
     {
         name: 'CT State Tunxis',
-        description: 
+        description:
             'CT State Tunxis is a new partner in 2023. They have generously allowed us four drop-off points spread across campus. Their Community Outreach Club supports out efforts as well.',
         logo: tunxisLogo,
         link: 'https://tunxis.edu/',
@@ -54,7 +54,8 @@ const sponsors = [
     },
     {
         name: 'UFC Gym',
-        description: 'UFC gym is also a new sponsor in 2023. In addition to providing another drop-off point at their Southington location, the staff has offered to run a free group fitness class to promote the toy drive and community health.',
+        description:
+            'UFC gym is also a new sponsor in 2023. In addition to providing another drop-off point at their Southington location, the staff has offered to run a free group fitness class to promote the toy drive and community health.',
         logo: ufcLogo,
         link: 'https://www.ufcgym.com/',
         dropOffLocations: [

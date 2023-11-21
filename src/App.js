@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
 import CustomRouter from './components/CustomRouter';
 import SponsorPage from './pages/SponsorPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -21,6 +22,7 @@ function AnimatedRoutes() {
                 <Route path="/drop-off" element={<DropOffPage />} />
                 <Route path="/wishlist" element={<WishlistPage />} />
                 <Route path="/sponsors" element={<SponsorPage />} />
+                <Route path='*' component={<NotFoundPage />} />
             </Routes>
         </AnimatePresence>
     );

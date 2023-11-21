@@ -15,7 +15,7 @@ export default function SponsorPage() {
                             <img
                                 src={sponsor.logo}
                                 alt={sponsor.name}
-                                className="h-36"
+                                className="max-w-xs max-h-32"
                             />
                             <h3>{sponsor.name}</h3>
                             <p>{sponsor.description}</p>
@@ -27,6 +27,7 @@ export default function SponsorPage() {
                             >
                                 Visit Website
                             </a>
+                            <hr className='my-10 w-full' />
                         </div>
                     ))}
                 </div>

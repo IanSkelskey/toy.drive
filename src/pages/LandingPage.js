@@ -47,49 +47,20 @@ export default function LandingPage() {
                 </Link>
                 <p>You can drop off toys at any of the following locations:</p>
                 <ul className="list-disc list-inside mb-2 text-xl">
-                    <li>
-                        <a
-                            className="link"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={sponsors.starbucks[0].mapUrl}
-                        >
-                            {sponsors.starbucks[0].name} -{' '}
-                            {sponsors.starbucks[0].address}
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="link"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={sponsors.starbucks[1].mapUrl}
-                        >
-                            {sponsors.starbucks[1].name} -{' '}
-                            {sponsors.starbucks[1].address}
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="link"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={sponsors.tunxis.mapUrl}
-                        >
-                            {sponsors.tunxis.name} - {sponsors.tunxis.address}
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="link"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={sponsors.ufcGymSouthington.mapUrl}
-                        >
-                            {sponsors.ufcGymSouthington.name} -{' '}
-                            {sponsors.ufcGymSouthington.address}
-                        </a>
-                    </li>
+                    {sponsors.map((sponsor) =>
+                        sponsor.dropOffLocations.map((location, index) => (
+                            <li key={index}>
+                                <a
+                                    className="link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={location.mapUrl}
+                                >
+                                    {location.name} - {location.address}
+                                </a>
+                            </li>
+                        ))
+                    )}
                 </ul>
 
                 <p>

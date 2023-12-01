@@ -14,10 +14,15 @@ export default function Header() {
     useEffect(() => {
         const fetchProgress = async () => {
             await fetchDonationProgress().then((progress) => {
-                setCashProgress(progress.latestCash.progressAmount);
-                setCashGoal(progress.latestCash.goalAmount);
+                setCashProgress(
+                    convertCurrencyStringToNumber(progress.latestCash.progressAmount)
+                );
+                setCashGoal(
+                    convertCurrencyStringToNumber(progress.latestCash.goalAmount)
+                );
                 setToyProgress(progress.latestToy.count);
                 setToyGoal(progress.latestToy.goal);
+                console.log('Progress:', progress);
             });
 
         };

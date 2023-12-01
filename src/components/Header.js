@@ -5,25 +5,26 @@ import fetchDonationProgress from '../utils/fetchDonations';
 import { useEffect, useState } from 'react';
 
 export default function Header() {
-    const [donationProgress, setDonationProgress] = useState(0);
-    const [donationGoal, setDonationGoal] = useState(0);
+    const [cashProgress, setCashProgress] = useState(0);
+    const [cashGoal, setCashGoal] = useState(0);
 
-    const toyGoal = 300;
-    const toyProgress = 8;
+    const [toyProgress, setToyProgress] = useState(0);
+    const [toyGoal, setToyGoal] = useState(0);
 
     useEffect(() => {
         const fetchProgress = async () => {
-            const donationData = await fetchDonationProgress();
-            if (donationData) {
-                setDonationProgress(
-                    convertCurrencyStringToNumber(donationData.progressAmount)
+            await fetchDonationProgress().then((progress) => {
+                setCashProgress(
+                    convertCurrencyStringToNumber(progress.latestCash.progressAmount)
                 );
-                setDonationGoal(
-                    convertCurrencyStringToNumber(donationData.goalAmount)
+                setCashGoal(
+                    convertCurrencyStringToNumber(progress.latestCash.goalAmount)
                 );
-            } else {
-                console.log('No new donation data available.');
-            }
+                setToyProgress(progress.latestToy.count);
+                setToyGoal(progress.latestToy.goal);
+                console.log('Progress:', progress);
+            });
+
         };
         fetchProgress();
     }, []);
@@ -38,8 +39,8 @@ export default function Header() {
             <img src={banner} alt="Banner" className="w-full mb-2" />
             <div className="w-full flex p-2 text-xl space-x-5 bg-white bg-opacity-60 rounded-lg mb-4">
                 <ProgressBar
-                    progress={donationProgress}
-                    goal={donationGoal}
+                    progress={cashProgress}
+                    goal={cashGoal}
                     title="Cash Goal"
                     emoji="💰"
                 />

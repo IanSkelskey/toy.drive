@@ -3,15 +3,14 @@ import {
     Routes,
     Route,
 } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import WishlistPage from './pages/WishlistPage';
-import DropOffPage from './pages/DropOffPage';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
 import CustomRouter from './components/CustomRouter';
+import OffSeasonLandingPag from './pages/OffSeasonLandingPage';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -19,9 +18,8 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<LandingPage />} />
+                <Route path="/" element={<OffSeasonLandingPag />} />
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/drop-off" element={<DropOffPage />} />
                 <Route path="/wishlist" element={<WishlistPage />} />
             </Routes>
         </AnimatePresence>
